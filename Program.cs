@@ -6,7 +6,7 @@ using MySqlConnector;
 using POO_II_NP2_WinForms.Controller;
 using POO_II_NP2_WinForms.Model;
 using POO_II_NP2_WinForms.Repository;
-using POO_II_NP2_WinForms.View;
+using POO_II_NP2_WinForms.View.Livros;
 
 namespace POO_II_NP2_WinForms;
 
@@ -23,7 +23,7 @@ namespace POO_II_NP2_WinForms;
             var builder = new ContainerBuilder();
 
             builder.Register(_ => new MySqlConnection(ConnectionString)).As<IDbConnection>().InstancePerLifetimeScope();
-            builder.RegisterType<LivroRepository>().As<IRepository<Livro>>().InstancePerLifetimeScope();
+            builder.RegisterType<LivroRepository>().As<IRepository<Livro>>();
             builder.RegisterType<LivroController>();
             builder.RegisterType<LivroForm>();
 

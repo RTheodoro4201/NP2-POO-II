@@ -6,10 +6,8 @@ using POO_II_NP2_WinForms.Validator;
 
 namespace POO_II_NP2_WinForms.Controller;
 
-public class LivroController(LivroRepository livroRepository)
+public class LivroController(IRepository<Livro> livroRepository)
 {
-    private readonly LivroRepository _livroRepository = livroRepository;
-
     public async Task<bool> Create(Livro livro)
     {
         var livroValidator = new LivroValidator();

@@ -93,10 +93,34 @@
         <Compile Include="src\Repository\IRepository.cs" />
         <Compile Include="src\Repository\LivroRepository.cs" />
         <Compile Include="src\Validator\LivroValidator.cs" />
-        <Compile Include="src\View\LivroForm.cs">
+        <Compile Include="src\View\Livros\AlteraLivroForm.cs">
           <SubType>Form</SubType>
         </Compile>
-        <Compile Include="src\View\LivroForm.Designer.cs">
+        <Compile Include="src\View\Livros\AlteraLivroForm.Designer.cs">
+          <DependentUpon>AlteraLivroForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="src\View\Livros\CadastroLivroForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="src\View\Livros\CadastroLivroForm.Designer.cs">
+          <DependentUpon>CadastroLivroForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="src\View\Livros\ConsultaLivroForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="src\View\Livros\ConsultaLivroForm.Designer.cs">
+          <DependentUpon>ConsultaLivroForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="src\View\Livros\ExcluirLivroForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="src\View\Livros\ExcluirLivroForm.Designer.cs">
+          <DependentUpon>ExcluirLivroForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="src\View\Livros\LivroForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="src\View\Livros\LivroForm.Designer.cs">
           <DependentUpon>LivroForm.cs</DependentUpon>
         </Compile>
         <EmbeddedResource Include="Properties\Resources.resx">
@@ -108,7 +132,10 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
-        <EmbeddedResource Include="src\View\LivroForm.resx">
+        <EmbeddedResource Include="src\View\Livros\CadastroLivroForm.resx">
+          <DependentUpon>CadastroLivroForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="src\View\Livros\LivroForm.resx">
           <DependentUpon>LivroForm.cs</DependentUpon>
         </EmbeddedResource>
         <None Include="packages.config" />
