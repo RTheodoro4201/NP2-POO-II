@@ -42,9 +42,10 @@ partial class CadastroLivroForm
         this.btnSalvar = new System.Windows.Forms.Button();
         this.btnCancelar = new System.Windows.Forms.Button();
         this.SuspendLayout();
-        //
+        // 
         // lblTitulo
-        //
+        // 
+        this.lblTitulo.BackColor = System.Drawing.SystemColors.Control;
         this.lblTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         this.lblTitulo.Font = new System.Drawing.Font("Tahoma", 12F);
         this.lblTitulo.Location = new System.Drawing.Point(403, 147);
@@ -53,25 +54,26 @@ partial class CadastroLivroForm
         this.lblTitulo.TabIndex = 0;
         this.lblTitulo.Text = "Título";
         this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        //
+        // 
         // txtTitulo
-        //
+        // 
         this.txtTitulo.Font = new System.Drawing.Font("Tahoma", 12F);
         this.txtTitulo.Location = new System.Drawing.Point(533, 147);
         this.txtTitulo.Name = "txtTitulo";
         this.txtTitulo.Size = new System.Drawing.Size(267, 27);
         this.txtTitulo.TabIndex = 1;
-        //
+        // 
         // txtAutor
-        //
+        // 
         this.txtAutor.Font = new System.Drawing.Font("Tahoma", 12F);
         this.txtAutor.Location = new System.Drawing.Point(533, 180);
         this.txtAutor.Name = "txtAutor";
         this.txtAutor.Size = new System.Drawing.Size(267, 27);
         this.txtAutor.TabIndex = 3;
-        //
+        // 
         // lblAutor
-        //
+        // 
+        this.lblAutor.BackColor = System.Drawing.SystemColors.Control;
         this.lblAutor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         this.lblAutor.Font = new System.Drawing.Font("Tahoma", 12F);
         this.lblAutor.Location = new System.Drawing.Point(403, 180);
@@ -80,17 +82,18 @@ partial class CadastroLivroForm
         this.lblAutor.TabIndex = 2;
         this.lblAutor.Text = "Autor";
         this.lblAutor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        //
+        // 
         // txtGenero
-        //
+        // 
         this.txtGenero.Font = new System.Drawing.Font("Tahoma", 12F);
         this.txtGenero.Location = new System.Drawing.Point(533, 213);
         this.txtGenero.Name = "txtGenero";
         this.txtGenero.Size = new System.Drawing.Size(267, 27);
         this.txtGenero.TabIndex = 5;
-        //
+        // 
         // lblGenero
-        //
+        // 
+        this.lblGenero.BackColor = System.Drawing.SystemColors.Control;
         this.lblGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         this.lblGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         this.lblGenero.Font = new System.Drawing.Font("Tahoma", 12F);
@@ -100,17 +103,18 @@ partial class CadastroLivroForm
         this.lblGenero.TabIndex = 4;
         this.lblGenero.Text = "Gênero";
         this.lblGenero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        //
+        // 
         // txtEditora
-        //
+        // 
         this.txtEditora.Font = new System.Drawing.Font("Tahoma", 12F);
         this.txtEditora.Location = new System.Drawing.Point(533, 246);
         this.txtEditora.Name = "txtEditora";
         this.txtEditora.Size = new System.Drawing.Size(267, 27);
         this.txtEditora.TabIndex = 7;
-        //
+        // 
         // lblEditora
-        //
+        // 
+        this.lblEditora.BackColor = System.Drawing.SystemColors.Control;
         this.lblEditora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         this.lblEditora.Font = new System.Drawing.Font("Tahoma", 12F);
         this.lblEditora.Location = new System.Drawing.Point(403, 246);
@@ -121,7 +125,7 @@ partial class CadastroLivroForm
         this.lblEditora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         //
         // btnSalvar
-        //
+        // 
         this.btnSalvar.Location = new System.Drawing.Point(403, 473);
         this.btnSalvar.Name = "btnSalvar";
         this.btnSalvar.Size = new System.Drawing.Size(179, 36);
@@ -129,9 +133,9 @@ partial class CadastroLivroForm
         this.btnSalvar.Text = "Salvar";
         this.btnSalvar.UseVisualStyleBackColor = true;
         this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-        //
+        // 
         // btnCancelar
-        //
+        // 
         this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
         this.btnCancelar.Location = new System.Drawing.Point(621, 473);
         this.btnCancelar.Name = "btnCancelar";
@@ -140,12 +144,13 @@ partial class CadastroLivroForm
         this.btnCancelar.Text = "Fechar";
         this.btnCancelar.UseVisualStyleBackColor = true;
         this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-        //
+        // 
         // CadastroLivroForm
-        //
+        // 
         this.AcceptButton = this.btnSalvar;
         this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        this.BackColor = System.Drawing.SystemColors.ActiveCaption;
         this.CancelButton = this.btnCancelar;
         this.ClientSize = new System.Drawing.Size(1350, 681);
         this.Controls.Add(this.btnCancelar);

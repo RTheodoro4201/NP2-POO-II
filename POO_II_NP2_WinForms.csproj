@@ -132,8 +132,17 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="src\View\Livros\AlteraLivroForm.resx">
+          <DependentUpon>AlteraLivroForm.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="src\View\Livros\CadastroLivroForm.resx">
           <DependentUpon>CadastroLivroForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="src\View\Livros\ConsultaLivroForm.resx">
+          <DependentUpon>ConsultaLivroForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="src\View\Livros\ExcluirLivroForm.resx">
+          <DependentUpon>ExcluirLivroForm.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="src\View\Livros\LivroForm.resx">
           <DependentUpon>LivroForm.cs</DependentUpon>
