@@ -35,6 +35,7 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnRecarregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataLivros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,11 +122,26 @@
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
+            // btnRecarregar
+            // 
+            this.btnRecarregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRecarregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecarregar.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.btnRecarregar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRecarregar.Location = new System.Drawing.Point(772, 586);
+            this.btnRecarregar.Name = "btnRecarregar";
+            this.btnRecarregar.Size = new System.Drawing.Size(216, 65);
+            this.btnRecarregar.TabIndex = 6;
+            this.btnRecarregar.Text = "Recarregar";
+            this.btnRecarregar.UseVisualStyleBackColor = false;
+            this.btnRecarregar.Click += new System.EventHandler(this.btnRecarregar_Click);
+            // 
             // LivroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 681);
+            this.Controls.Add(this.btnRecarregar);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnExcluir);
@@ -147,6 +163,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataLivros)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button btnRecarregar;
 
         private System.Windows.Forms.Button btnConsultar;
 

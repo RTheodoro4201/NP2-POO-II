@@ -28,6 +28,7 @@ public partial class LivroForm : Form
     private async void LivroForm_Load(object sender, EventArgs e)
     {
         ResizeForm(this, null);
+        dataLivros.AutoGenerateColumns = true;
         await CarregarGrid();
     }
 
@@ -40,7 +41,6 @@ public partial class LivroForm : Form
             if (livros.Any())
             {
                 dataLivros.DataSource = livros;
-                dataLivros.AutoGenerateColumns = true;
                 dataLivros.Columns[0].HeaderText = "Id";
                 dataLivros.Columns[1].HeaderText = "Título";
                 dataLivros.Columns[3].HeaderText = "Gênero";
@@ -57,7 +57,7 @@ public partial class LivroForm : Form
         catch (Exception e)
         {
             MessageBox.Show(
-                "Ocorreu um erro ao carregar os dados dos funcionários. Por favor, tente novamente mais tarde.", "Erro",
+                "Ocorreu um erro ao carregar os dados dos livros. Por favor, tente novamente mais tarde.", "Erro",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             MessageBox.Show(
@@ -131,4 +131,39 @@ public partial class LivroForm : Form
     }
 
     #endregion
+
+    private async void btnRecarregar_Click(object sender, EventArgs e)
+    {
+        await CarregarGrid();
+    }
+
+    private async Task AtualizarGrid(int idLivro)
+    {
+        try
+        {
+            var livros = await _livroController.Index();
+
+            if (livros.Any())
+            {
+
+            }
+
+            else
+            {
+                MessageBox.Show("Não foi encontrado nenhum registro no servidor.", "Aviso", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+        }
+
+        catch (Exception e)
+        {
+            MessageBox.Show(
+                "Ocorreu um erro ao carregar os dados dos livros. Por favor, tente novamente mais tarde.", "Erro",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            MessageBox.Show(
+                "Erro: " + e.Message, "Erro",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+    }
 }

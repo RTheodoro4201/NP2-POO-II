@@ -67,8 +67,7 @@ public partial class ExcluirLivroForm : Form
         catch (Exception exception)
         {
             MessageBox.Show("Houve um erro ao tentar excluir o livro!");
-            MessageBox.Show(exception.Message);
-            throw;
+            MessageBox.Show("Erro: " + exception.Message);
         }
     }
 
@@ -76,4 +75,5 @@ public partial class ExcluirLivroForm : Form
     {
         Close();
     }
+
 }

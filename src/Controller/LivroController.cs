@@ -48,16 +48,13 @@ public class LivroController(IRepository<Livro> livroRepository)
         return false;
     }
 
-    public async Task<bool> Delete(int id)
+    public async Task Delete(int id)
     {
         var livro = await livroRepository.GetById(id);
 
         if (livro != null)
         {
             await livroRepository.Delete(id);
-            return true;
         }
-
-        return false;
     }
 }
